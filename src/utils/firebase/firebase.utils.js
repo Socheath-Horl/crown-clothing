@@ -30,7 +30,7 @@ const firebaseConfig = {
   measurementId: "G-PJLHL5TMZ4"
 };
 
-const firebaseApp = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
 
