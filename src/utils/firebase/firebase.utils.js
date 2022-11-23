@@ -21,13 +21,13 @@ import {
 } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCp4egqTEArNGcKsBlKmEtpu354ERoMqBQ",
-  authDomain: "crown-clothing-1f12e.firebaseapp.com",
-  projectId: "crown-clothing-1f12e",
-  storageBucket: "crown-clothing-1f12e.appspot.com",
-  messagingSenderId: "24996963009",
-  appId: "1:24996963009:web:a77a77fc18c0a87e2aaa40",
-  measurementId: "G-PJLHL5TMZ4"
+  apiKey: process.env.GOOGLE_APIKEY,
+  authDomain: process.env.GOOGLE_AUTHDOMAIN,
+  projectId: process.env.GOOGLE_PROJECTID,
+  storageBucket: process.env.GOOGLE_STORAGE_BUCKET,
+  messagingSenderId: process.env.GOOGLE_MSG_SENDER_ID,
+  appId: process.env.GOOGLE_APP_ID,
+  measurementId: process.env.GOOOGLE_MEASURE_ID
 };
 
 initializeApp(firebaseConfig);
